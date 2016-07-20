@@ -1,0 +1,15 @@
+{
+  "name": "forgebot",
+  "version": "1.0.0",
+  "description": "Interacts with IBM DataWorks API",
+  "main": "lib/forgebot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Cummins",
+  "license": "ISC",
+  "dependencies": {
+    "slackbots": "^0.5.1",
+    "sqlite3": "^3.1.4"
+  }
+}
