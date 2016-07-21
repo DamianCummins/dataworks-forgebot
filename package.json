@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "description": "Interacts with IBM DataWorks API",
   "main": "lib/forgebot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-shared.hursley.ibm.com/109297866/forgebot.git"
+  },
+  "main": "lib/forgebot.js",
+  "bin": {
+    "forgebot": "bin/bot.js"
+  },
   "scripts": {
+    "start": "node bin/bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Damian Cummins",
