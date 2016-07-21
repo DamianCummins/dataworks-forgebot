@@ -19,6 +19,14 @@
   "license": "ISC",
   "dependencies": {
     "slackbots": "^0.5.1",
-    "sqlite3": "^3.1.4"
+    "sqlite3": "^3.1.4",
+    "express": "4.13.x",
+    "cfenv": "1.0.x",
+    "async": "latest",
+    "bluemix-helper-config": "latest",
+    "request": "latest",
+    "http-proxy": "latest",
+    "lodash": "latest",
+    "when": "latest"
   }
 }
