@@ -24,6 +24,7 @@
     "cfenv": "1.0.x",
     "async": "latest",
     "bluemix-helper-config": "latest",
+    "nodejs-dataworks": "latest",
     "request": "latest",
     "http-proxy": "latest",
     "lodash": "latest",
