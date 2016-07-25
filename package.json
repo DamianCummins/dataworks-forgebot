@@ -7,13 +7,12 @@
     "type": "git",
     "url": "https://gitlab-shared.hursley.ibm.com/109297866/forgebot.git"
   },
-  "main": "lib/forgebot.js",
   "bin": {
     "forgebot": "bin/bot.js"
   },
   "scripts": {
     "start": "node bin/bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": "Damian Cummins",
   "license": "ISC",
@@ -28,6 +27,10 @@
     "request": "latest",
     "http-proxy": "latest",
     "lodash": "latest",
-    "when": "latest"
+    "when": "latest",
+    "sinon": "latest"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }
