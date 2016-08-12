@@ -25,7 +25,34 @@ before(function(){
 	})
 });
 
-describe('Usage', function(){
+describe('IsUsageMessage', function(){
+
+	it('Should check that a usage message can be identified', function(){
+		var forgebot = new ForgeBot({
+			token: 'dummytoken',
+			dbPath: '../data/forgebot.db',
+			name: 'forgebot'
+		});
+		var message = {
+			text: 'forgebot usage'
+		};
+		expect(ForgeBot.prototype._isUsage(message)).to.equal(true);
+		message = {
+			text: 'forgebot Commands'
+		};
+		expect(ForgeBot.prototype._isUsage(message)).to.equal(true);
+		message = {
+			text: 'forgebot help'
+		};
+		expect(ForgeBot.prototype._isUsage(message)).to.equal(true);
+		message = {
+			text: 'forgebot hey'
+		};
+		expect(ForgeBot.prototype._isUsage(message)).to.equal(false);
+	});
+});
+
+describe('PostUsage', function(){
 
 	it('Should post a message containing the Usage', function(){
 		var forgebot = new ForgeBot({
