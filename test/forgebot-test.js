@@ -132,7 +132,7 @@ describe('IsListActivitiesMessage', function(){
 		expect(forgebot._isListActivities(message)).to.equal(true);
 		message = {
 			type: 'message',
-			text: 'forgebot list activities in full',
+			text: 'forgebot list activities -v',
 			channel: "C1",
 			user: "testUser"
 		};
