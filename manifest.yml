@@ -1,7 +1,7 @@
 declared-services:
-  dataworks-forgebot-DataWorks_Gen3:
+  DataWorks_Gen3:
     label: DataWorks_Gen3
-    plan: Personal
+    plan: Starter-GA
 
 applications:
 - path: .
@@ -12,5 +12,7 @@ applications:
   host: dataworks-forgebot
   disk_quota: 1024M
   no-route: true
+  env:
+    BOT_API_KEY: <YourSlackBotKeyHere>
   services:
-   - dataworks-forgebot-DataWorks_Gen3
+    - DataWorks_Gen3
