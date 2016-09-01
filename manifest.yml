@@ -12,5 +12,5 @@ applications:
   host: dataworks-forgebot
   disk_quota: 1024M
   no-route: true
-- services
-  - dataworks-forgebot-DataWorks_Gen3
+  services:
+   - dataworks-forgebot-DataWorks_Gen3
