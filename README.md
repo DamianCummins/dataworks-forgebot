@@ -4,8 +4,32 @@
 ForgeBot is a Slackbot that interacts with an instance of the DataWorks service in IBM Bluemix via the DataWorks Public API.
 It can be used to list, run and monitor activities that have been created in the DataWorks Forge UI, all from within a Slack channel.
 
+### Create a Bot in your Slack organization
+
+To add a new Bot in your Slack organization you must visit the following url: https://yourorganization.slack.com/services/new/bot, where yourorganization must be substituted with the name of your organization. Ensure you are logged in to your Slack organization in your browser and you have the admin rights to add a new bot.
+
+
+In the first step you need to choose a name for your bot - in this case call it `@forgebot`. 
+
+Then you will move to another screen where you will be able to copy your API token.
+
+Copy the token in a safe place and save it, you will need it in a while. In this section you can also specify some more details about your bot, like the first and last name.
+
+Click the button below to deploy this application to Bluemix. You will require a Bluemix account. Clicking this button will also create and bind an instance of the IBM DataWorks service under the Starter-GA plan.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/DamianCummins/dataworks-forgebot)
+
+Once the application has been deployed, navigate to your Bluemix Dashboard and you should see the Application and the DataWorks service.
+
+Click the application and on the left side menu, select Environment Variables, then choose USER-DEFINED.
+
+Replace <YourSlackBotKeyHere> with the Slack Bot API token from earlier.
+
+Return to the app by clicking Overview on the left side menu, then Restart the app by clicking RESTART in the APP HEALTH section.
+
+Once the app is running once more, open the general channel in your Slack team and send ForgeBot a message: "Forgebot commands".
+
+Forgebot should respond with the following message:
 
 ##### Forgebot Commands:
 
