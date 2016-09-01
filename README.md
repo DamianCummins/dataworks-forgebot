@@ -15,6 +15,8 @@ Then you will move to another screen where you will be able to copy your API tok
 
 Copy the token to a safe place and save it, you will need it in a while. In this section you can also specify some more details about your bot, like the first and last name.
 
+### Deploy the app to IBM Bluemix
+
 Click the button below to deploy this app to Bluemix. You will require a Bluemix account. Clicking this button will also create and bind an instance of the IBM DataWorks service under the Starter-GA plan.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/DamianCummins/dataworks-forgebot)
