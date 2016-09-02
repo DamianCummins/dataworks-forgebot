@@ -1,17 +1,17 @@
 # ForgeBot
 ### *A Data Movement Chatbot*
 
-ForgeBot is a Slackbot that interacts with an instance of the DataWorks service in IBM Bluemix via the DataWorks Public API.
-It can be used to list, run and monitor activities that have been created in the DataWorks Forge UI, all from within a Slack channel.
+ForgeBot is a Slackbot that interacts with an instance of the IBM DataWorks service in IBM Bluemix via the DataWorks Public API.
+It can be used to List, Run and Monitor Activities that have been created in the DataWorks Forge UI, all from within a Slack channel.
 
 ### Create a Bot in your Slack organization
 
-To add a new Bot in your Slack organization you must visit the following url: https://yourorganization.slack.com/services/new/bot, where yourorganization must be substituted with the name of your organization. Ensure you are logged in to your Slack organization in your browser and you have the admin rights to add a new bot.
+To add a new Bot in your Slack organization you must visit the following url: https://yourorganization.slack.com/services/new/bot, where `yourorganization` must be substituted with the name of your organization. Ensure you are logged in to your Slack organization in your browser and you have the admin rights to add a new bot.
 
 
 In the first step you need to choose a name for your bot - in this case call it `@forgebot`. 
 
-Then you will move to another screen where you will be able to copy your API token.
+Then you will move to another page where you will be able to copy your API token.
 
 Copy the token to a safe place and save it, you will need it in a while. In this section you can also specify some more details about your bot, like the first and last name.
 
