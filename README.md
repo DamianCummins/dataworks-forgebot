@@ -37,12 +37,24 @@ Forgebot should respond with the following message:
 
 > - Forgebot list activities
 > - Forgebot list activities -v
-> - Forgebot run activity <activityId>
-> - Forgebot run activity -n <activityName>
-> - Forgebot get status -a <activityId> -r <runId>
-> - Forgebot get status -a <activityId> -r latest
-> - Forgebot get status -a -n <activityName> -r latest
+> - Forgebot run activity `<activityId>`
+> - Forgebot run activity -n `<activityName>`
+> - Forgebot get status -a `<activityId>` -r `<runId>`
+> - Forgebot get status -a `<activityId>` -r latest
+> - Forgebot get status -a -n `<activityName>` -r latest
 
 To create some activities for Forgebot to run, return to the Bluemix Dashboard and click the DataWorks service instance. This will bring up the launch page from which you can navigate to the Forge UI.
 
 You can find further documentation regarding supported Sources and Targets <a href="https://console.eu-gb.bluemix.net/docs/services/dataworks1/dataworks_overview.html#dataworks_overview">here</a>.
+
+## Bind ForgeBot to an existing DataWorks instance
+
+If you already have a DataWorks instance that you want ForgeBot to interact with, choose the relevant Org and Space when deploying via the button above. You will see warnings as only one DataWorks instance is permitted per Space. The app will still be created despite the failed deployment stage. 
+
+Navigate to the Bluemix Dashboard and bind the app to your existing DataWorks instance. Do not forget to set the Bot API token in the app's USER-DEFINED Environment Variables before restarting. 
+
+Once the app has restarted, ForgeBot should now be able to List, Run and Monitor the Activities in your existing DataWorks instance.
+
+## IBM DataWorks DataLoad API
+
+ForgeBot uses the npm library <a href="https://www.npmjs.com/package/nodejs-dataworks">nodejs-dataworks</a>, a Node.js REST Client, to interact with the <a href="https://console.eu-gb.bluemix.net/docs/services/dataworks1/t_start_get_data.html#task_d4j_q1r_np">IBM DataWorks DataLoad API</a>.

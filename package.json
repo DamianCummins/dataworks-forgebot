@@ -5,7 +5,7 @@
   "main": "lib/forgebot.js",
   "repository": {
     "type": "git",
-    "url": "https://gitlab-shared.hursley.ibm.com/109297866/forgebot.git"
+    "url": "https://github.com/DamianCummins/dataworks-forgebot"
   },
   "bin": {
     "forgebot": "bin/bot.js"
