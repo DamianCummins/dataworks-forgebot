@@ -57,4 +57,13 @@ Once the app has restarted, ForgeBot should now be able to List, Run and Monitor
 
 ## IBM DataWorks DataLoad API
 
-ForgeBot uses the npm library <a href="https://www.npmjs.com/package/nodejs-dataworks">nodejs-dataworks</a>, a Node.js REST Client, to interact with the <a href="https://console.eu-gb.bluemix.net/docs/services/dataworks1/t_start_get_data.html#task_d4j_q1r_np">IBM DataWorks DataLoad API</a>.
+ForgeBot requires the npm library <a href="https://www.npmjs.com/package/nodejs-dataworks">nodejs-dataworks</a>, a Node.js REST Client, to interact with the <a href="https://console.eu-gb.bluemix.net/docs/services/dataworks1/t_start_get_data.html#task_d4j_q1r_np">IBM DataWorks DataLoad API</a>.
+
+## Other libraries
+
+Forgebot requires the npm library <a href="https://www.npmjs.com/package/slackbots">slackbots</a> to interact with the Slack api.
+
+
+## Legal statement
+
+The Forgebot application is a sample application which demonstrates data load using the IBM DataWorks service. The program is made available under the Apache license, Version 2.0. The program interfaces with the IBM DataWorks service, which is made available under separate IBM license.
